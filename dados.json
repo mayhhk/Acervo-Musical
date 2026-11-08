@@ -14,8 +14,8 @@
             ],
             "albuns": [
             { "titulo": "The Fame", "ano": 2008, "imagem": "./assets/imagens/album1.jpg" },
-            { "titulo": "Born This Way", "ano": 2011, "imagem": "./assets/imagens/bornthisway.jpg" },
-            { "titulo": "Chromatica", "ano": 2020, "imagem": "./assets/imagens/chromatica.jpg" }
+            { "titulo": "Born This Way", "ano": 2011, "imagem": "./assets/imagens/album7.jpg" },
+            { "titulo": "Chromatica", "ano": 2020, "imagem": "./assets/imagens/album8.jpg" }
             ]
         },
         {
@@ -33,8 +33,8 @@
             ],
             "albuns": [
             { "titulo": "A Tábua de Esmeralda", "ano": 1974, "imagem": "./assets/imagens/album2.jpg" },
-            { "titulo": "Força Bruta", "ano": 1970, "imagem": "./assets/imagens/forca-bruta.jpg" },
-            { "titulo": "África Brasil", "ano": 1976, "imagem": "./assets/imagens/africa-brasil.jpg" }
+            { "titulo": "Força Bruta", "ano": 1970, "imagem": "./assets/imagens/album9.jpg" },
+            { "titulo": "África Brasil", "ano": 1976, "imagem": "./assets/imagens/album10.jpg" }
             ]
         },
         {
@@ -52,8 +52,8 @@
             ],
             "albuns": [
             { "titulo": "Norman Fucking Rockwell!", "ano": 2019, "imagem": "./assets/imagens/album3.jpg" },
-            { "titulo": "Born to Die", "ano": 2012, "imagem": "./assets/imagens/album4.jpg" },
-            { "titulo": "Ultraviolence", "ano": 2014, "imagem": "./assets/imagens/album5.jpg" }
+            { "titulo": "Born to Die", "ano": 2012, "imagem": "./assets/imagens/album11.jpg" },
+            { "titulo": "Ultraviolence", "ano": 2014, "imagem": "./assets/imagens/album12.jpg" }
             ]
         },
         {
@@ -70,9 +70,9 @@
             { "rotulo": "Álbuns lançados", "valor": "SOUR (2021) e GUTS (2023)" }
             ],
             "albuns": [
-            { "titulo": "You seem pretty sad for a girl so in love", "ano": "", "imagem": "./assets/imagens/album5.jpg" },
-            { "titulo": "SOUR", "ano": 2021, "imagem": "imagens/sour.jpg" },
-            { "titulo": "GUTS", "ano": 2023, "imagem": "imagens/guts.jpg" }
+            { "titulo": "You seem pretty sad for a girl so in love", "ano": "2026", "imagem": "./assets/imagens/album4.jpg" },
+            { "titulo": "SOUR", "ano": 2021, "imagem": "./assets/imagens/album13.jpg" },
+            { "titulo": "GUTS", "ano": 2023, "imagem": "./assets/imagens/album14.jpg" }
             ]
         },
         {
@@ -90,8 +90,8 @@
             ],
             "albuns": [
             { "titulo": "Debí Tirar Más Fotos", "ano": 2025, "imagem": "./assets/imagens/album5.jpg" },
-            { "titulo": "Un Verano Sin Ti", "ano": 2022, "imagem": "imagens/un-verano-sin-ti.jpg" },
-            { "titulo": "YHLQMDLG", "ano": 2020, "imagem": "imagens/yhlqmdlg.jpg" }
+            { "titulo": "Un Verano Sin Ti", "ano": 2022, "imagem": "./assets/imagens/album15.jpg" },
+            { "titulo": "YHLQMDLG", "ano": 2020, "imagem": "./assets/imagens/album16.jpg" }
             ]
         },
         {
@@ -111,8 +111,8 @@
             
             "albuns": [
             { "titulo": "I Love You.", "ano": 2013, "imagem": "./assets/imagens/album6.jpg" },
-            { "titulo": "Wiped Out!", "ano": 2015, "imagem": "imagens/wiped-out.jpg" },
-            { "titulo": "Hard to Imagine the Neighbourhood Ever Changing", "ano": 2018, "imagem": "imagens/hard-to-imagine.jpg" }
+            { "titulo": "Wiped Out!", "ano": 2015, "imagem": "./assets/imagens/albuns17.jpg" },
+            { "titulo": "Hard to Imagine the Neighbourhood Ever Changing", "ano": 2018, "imagem": "./assets/imagens/album18.jpg" }
             ]
         }
 ]

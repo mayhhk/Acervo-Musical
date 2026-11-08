@@ -373,14 +373,21 @@ footer {
     background-color: var(--vinho-escuro);
     color: #fff;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    
 }
+
 .footer-links { margin-bottom: 10px; }
 .footer-links a,
 .social-media a {
     color: #fff;
     margin: 0 10px;
 }
+
+
 
 /* ---------- Responsivo ---------- */
 @media (max-width: 900px) {
