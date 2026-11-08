@@ -1,0 +1,119 @@
+[
+            {
+            "id": 1,
+            "nome": "Lady Gaga",
+            "imagem": "./assets/imagens/Ladygaga.jpg",
+            "destaque": true,
+            "resumo": "Lady Gaga é uma cantora, compositora e atriz americana conhecida por sua versatilidade musical e performances teatrais. E é reconhecida por seu estilo único e inovador.",
+            "info": [
+            { "rotulo": "Nome de nascimento", "valor": "Stefani Joanne Angelina Germanotta" },
+            { "rotulo": "Nascimento", "valor": "28 de março de 1986" },
+            { "rotulo": "Origem", "valor": "Nova York, Estados Unidos" },
+            { "rotulo": "Gênero", "valor": "Pop" },
+            { "rotulo": "Ativa desde", "valor": "2005" }
+            ],
+            "albuns": [
+            { "titulo": "The Fame", "ano": 2008, "imagem": "./assets/imagens/album1.jpg" },
+            { "titulo": "Born This Way", "ano": 2011, "imagem": "./assets/imagens/bornthisway.jpg" },
+            { "titulo": "Chromatica", "ano": 2020, "imagem": "./assets/imagens/chromatica.jpg" }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Jorge Ben Jor",
+            "imagem": "./assets/imagens/jorgeben.jpg",
+            "destaque": true,
+            "resumo": "Jorge Ben Jor é um cantor, compositor e instrumentista brasileiro, conhecido por suas letras poéticas e influência no movimento da música popular brasileira (MPB).",
+            "info": [
+            { "rotulo": "Nome de nascimento", "valor": "Jorge Duílio Lima Menezes" },
+            { "rotulo": "Nascimento", "valor": "22 de março de 1939" },
+            { "rotulo": "Origem", "valor": "Rio de Janeiro, Brasil" },
+            { "rotulo": "Gênero", "valor": "MPB / Samba-rock" },
+            { "rotulo": "Ativo desde", "valor": "1963" }
+            ],
+            "albuns": [
+            { "titulo": "A Tábua de Esmeralda", "ano": 1974, "imagem": "./assets/imagens/album2.jpg" },
+            { "titulo": "Força Bruta", "ano": 1970, "imagem": "./assets/imagens/forca-bruta.jpg" },
+            { "titulo": "África Brasil", "ano": 1976, "imagem": "./assets/imagens/africa-brasil.jpg" }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lana del Rey",
+            "imagem": "./assets/imagens/lanadelrey.jpg",
+            "destaque": false,
+            "resumo": "Lana del Rey é uma cantora e compositora americana, conhecida por seu estilo melancólico e visual nostálgico.",
+            "info": [
+            { "rotulo": "Nome de nascimento", "valor": "Elizabeth Woolridge Grant" },
+            { "rotulo": "Nascimento", "valor": "21 de junho de 1985" },
+            { "rotulo": "Origem", "valor": "Nova York, Estados Unidos" },
+            { "rotulo": "Gênero", "valor": "Indie pop" },
+            { "rotulo": "Ativa desde", "valor": "2010" }
+            ],
+            "albuns": [
+            { "titulo": "Norman Fucking Rockwell!", "ano": 2019, "imagem": "./assets/imagens/album3.jpg" },
+            { "titulo": "Born to Die", "ano": 2012, "imagem": "./assets/imagens/album4.jpg" },
+            { "titulo": "Ultraviolence", "ano": 2014, "imagem": "./assets/imagens/album5.jpg" }
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Olivia Rodrigo",
+            "imagem": "./assets/imagens/Olivia.jpg",
+            "destaque": false,
+            "resumo": "Olivia Rodrigo é uma cantora e compositora americana, conhecida por seu estilo musical autêntico e letras emocionais.",
+            "info": [
+            { "rotulo": "Nascimento", "valor": "20 de fevereiro de 2003" },
+            { "rotulo": "Origem", "valor": "Murrieta, Califórnia, Estados Unidos" },
+            { "rotulo": "Gênero", "valor": "Pop" },
+            { "rotulo": "Ativa desde", "valor": "2020" },
+            { "rotulo": "Álbuns lançados", "valor": "SOUR (2021) e GUTS (2023)" }
+            ],
+            "albuns": [
+            { "titulo": "You seem pretty sad for a girl so in love", "ano": "", "imagem": "./assets/imagens/album5.jpg" },
+            { "titulo": "SOUR", "ano": 2021, "imagem": "imagens/sour.jpg" },
+            { "titulo": "GUTS", "ano": 2023, "imagem": "imagens/guts.jpg" }
+            ]
+        },
+        {
+            "id": 5,
+            "nome": "Bad Bunny",
+            "imagem": "./assets/imagens/badbunny.jpg",
+            "destaque": false,
+            "resumo": "Bad Bunny é um cantor e compositor puertorriquenho, conhecido por seu estilo musical híbrido que combina reggaeton, trap e elementos da cultura pop.",
+            "info": [
+            { "rotulo": "Nome de nascimento", "valor": "Benito Antonio Martínez Ocasio" },
+            { "rotulo": "Nascimento", "valor": "10 de março de 1994" },
+            { "rotulo": "Origem", "valor": "Vega Baja, Porto Rico" },
+            { "rotulo": "Gênero", "valor": "Reggaeton" },
+            { "rotulo": "Ativo desde", "valor": "2016" }
+            ],
+            "albuns": [
+            { "titulo": "Debí Tirar Más Fotos", "ano": 2025, "imagem": "./assets/imagens/album5.jpg" },
+            { "titulo": "Un Verano Sin Ti", "ano": 2022, "imagem": "imagens/un-verano-sin-ti.jpg" },
+            { "titulo": "YHLQMDLG", "ano": 2020, "imagem": "imagens/yhlqmdlg.jpg" }
+            ]
+        },
+        {
+            "id": 6,
+            "nome": "The Neighbourhood",
+            "imagem": "./assets/imagens/Thenbhd.jpg",
+            "destaque": false,
+            "resumo": "The Neighbourhood é uma banda de rock americana formada em 2011, conhecida por seu estilo musical introspectivo e letras que abordam temas como ansiedade e depressão.",
+            
+            "info": [
+            { "rotulo": "Formação", "valor": "2011" },
+            { "rotulo": "Origem", "valor": "Newbury Park, Califórnia, Estados Unidos" },
+            { "rotulo": "Gênero", "valor": "Indie rock" },
+            { "rotulo": "Vocalista", "valor": "Jesse Rutherford" },
+            { "rotulo": "Álbum de estreia", "valor": "I Love You. (2013)" }
+            ],
+            
+            "albuns": [
+            { "titulo": "I Love You.", "ano": 2013, "imagem": "./assets/imagens/album6.jpg" },
+            { "titulo": "Wiped Out!", "ano": 2015, "imagem": "imagens/wiped-out.jpg" },
+            { "titulo": "Hard to Imagine the Neighbourhood Ever Changing", "ano": 2018, "imagem": "imagens/hard-to-imagine.jpg" }
+            ]
+        }
+]
+

@@ -1,0 +1,412 @@
+:root {
+    --vinho: #65232B;
+    --vinho-escuro: #4d2c2c;
+    --creme: #F8E5D7;
+    --vidro: rgba(255, 255, 255, 0.466);
+    --raio: 10px;
+    --largura: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--vinho);
+    color: #fff;
+    line-height: 1.55;
+}
+
+img { display: block; max-width: 100%; }
+
+a {
+    color: rgb(109, 55, 55);
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+a:hover { opacity: 1; }
+
+:focus-visible {
+    outline: 3px solid #c2185b;
+    outline-offset: 2px;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px 20px;
+    background-color: var(--creme);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-family: 'Crimson Text', serif;
+    opacity: 1;
+}
+
+.titulo {
+    font-size: 34px;
+    color: var(--vinho);
+    font-weight: 600;
+}
+
+.logotipo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.barraPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: var(--vidro);
+    border-radius: 12px;
+    padding: 8px 12px;
+    gap: 8px;
+}
+.barraPesquisa input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--vinho);
+    width: 220px;
+}
+.barraPesquisa input::placeholder { color: rgba(101, 35, 43, 0.6); }
+.barraPesquisa button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--vinho);
+    transition: transform 0.2s ease-in-out;
+}
+.barraPesquisa button:hover { transform: scale(1.1); }
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-size: 20px;
+    background-color: var(--vidro);
+    padding: 16px 20px;
+    border-radius: 12px;
+}
+
+/* ---------- Títulos ---------- */
+.titulosecao {
+    font-size: 50px;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introsecao {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* ---------- Tela 1: carrossel ---------- */
+.secao-destaques {
+    padding: 50px 20px 60px;
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    max-width: var(--largura);
+    margin: 0 auto;
+    border-radius: var(--raio);
+    background: #000;
+}
+.carrossel-trilho {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    position: relative;
+    flex: 0 0 100%;
+    height: clamp(280px, 48vw, 520px);
+    display: block;
+    color: #fff;
+    opacity: 1;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+}
+.slide-texto {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 60px 80px 44px;
+    background: linear-gradient(to top, rgba(40, 10, 15, 0.92), rgba(40, 10, 15, 0));
+}
+.slide-texto h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 600;
+}
+.slide-texto p {
+    max-width: 60ch;
+    font-size: 0.95rem;
+}
+
+.carrossel-seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(248, 229, 215, 0.92);
+    color: var(--vinho);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.carrossel-seta:hover { background: var(--creme); }
+.anterior { left: 14px; }
+.proxima { right: 14px; }
+
+.carrossel-pontos {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.ponto {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.ponto.ativo { background: var(--creme); }
+
+/* ---------- Tela 1: grade de cards ---------- */
+.secao-artistas {
+    background-color: var(--creme);
+    color: #000;
+    padding: 60px 20px 70px;
+}
+
+.artistasCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: var(--largura);
+    margin: 0 auto;
+}
+
+.card {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.945);
+    border-radius: var(--raio);
+    overflow: hidden;
+    color: #000;
+    opacity: 1;
+    border: 2px solid transparent;
+    transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+    border-color: var(--vinho);
+    transform: translateY(-4px);
+}
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.card-corpo { padding: 14px 18px 20px; }
+.card h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.card p {
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.mensagem {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 24px 0;
+}
+.mensagem a { color: var(--vinho); opacity: 1; text-decoration: underline; }
+
+/* ---------- Tela 2: informações gerais ---------- */
+.secao-info {
+    background-color: var(--creme);
+    color: #000;
+    padding: 60px 20px;
+}
+
+.detalhe {
+    display: grid;
+    grid-template-columns: minmax(220px, 360px) 1fr;
+    gap: 32px;
+    align-items: start;
+    max-width: var(--largura);
+    margin: 0 auto;
+}
+.detalhe-foto {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--raio);
+}
+.detalhe-painel {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 28px 32px;
+}
+.detalhe-painel h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--vinho);
+    line-height: 1.15;
+    margin-bottom: 8px;
+}
+.detalhe-resumo { margin-bottom: 22px; }
+
+.info-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px 28px;
+}
+.info-lista dt {
+    font-size: 0.85rem;
+    color: var(--vinho);
+    font-weight: 600;
+}
+.info-lista dd { font-size: 1rem; }
+
+/* ---------- Tela 2: álbuns ---------- */
+.secao-albuns {
+    padding: 60px 20px 70px;
+}
+.galeria {
+    position: relative;
+    max-width: var(--largura);
+    margin: 0 auto;
+}
+.galeria-faixa {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 14px;
+}
+.albumCard {
+    flex: 0 0 clamp(200px, 26%, 280px);
+    scroll-snap-align: start;
+    background-color: rgba(224, 222, 222, 0.89);
+    border-radius: 5px;
+    padding: 16px;
+    color: #000;
+    text-align: center;
+}
+.albumCard img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.albumCard h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.albumCard p { font-size: 0.85rem; color: #444; }
+
+.galeria-seta {
+    position: absolute;
+    right: 8px;
+    top: 38%;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--creme);
+    color: var(--vinho);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+    background-color: var(--vinho-escuro);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-links { margin-bottom: 10px; }
+.footer-links a,
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+    header { justify-content: center; }
+    .titulo { font-size: 28px; }
+    .titulosecao { font-size: 38px; }
+    .detalhe { grid-template-columns: 1fr; }
+    .detalhe-foto { max-width: 360px; margin: 0 auto; }
+}
+
+@media (max-width: 600px) {
+    header nav ul { gap: 16px; font-size: 17px; padding: 12px 16px; }
+    .barraPesquisa { width: 100%; }
+    .barraPesquisa input { width: 100%; }
+    .slide-texto { padding: 40px 20px 40px; }
+    .slide-texto p { display: none; }
+    .carrossel-seta { width: 36px; height: 36px; }
+    .artistasCards { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .card-corpo { padding: 10px 12px 14px; }
+    .card h3 { font-size: 20px; }
+    .card p { display: none; }
+    .detalhe-painel { padding: 20px; }
+    .albumCard { flex-basis: 65%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .carrossel-trilho, .card, .galeria-faixa { transition: none; scroll-behavior: auto; }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" type="module"></script>
+    <title>Detalhes do artista | Acervo Musical</title>
+</head>
+<body>
+    <header>
+        <a class="marca" href="index.html" aria-label="Acervo Musical, página inicial">
+            <img src="assets/imagens/logo.png" alt="Logotipo" class="logotipo">
+            <span class="titulo">Acervo Musical</span>
+        </a>
+
+        <div class="barraPesquisa">
+            <input type="text" id="pesquisaInput" placeholder="Buscar artista ou álbum..." aria-label="Buscar artista ou álbum">
+            <button type="button" id="pesquisaBtn" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#artistas">Artistas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tela 2: informações gerais (entidade principal) -->
+        <section class="secao-info" aria-labelledby="titulo-info">
+            <h2 class="titulosecao" id="titulo-info">Informações gerais</h2>
+            <div id="detalhe-artista"></div>
+        </section>
+
+        <!-- Tela 2: álbuns do artista (entidade secundária) -->
+        <section class="secao-albuns" aria-labelledby="titulo-albuns">
+            <h2 class="titulosecao" id="titulo-albuns">Álbuns</h2>
+            <div class="galeria">
+                <div class="galeria-faixa" id="galeria-faixa"></div>
+                <button class="galeria-seta" id="galeria-proxima" aria-label="Ver mais álbuns">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2026 Acervo Musical. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
